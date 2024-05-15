@@ -96,12 +96,13 @@
         table {
             /* width: 98%;
                 margin: 2%; */
+            /* padding: 10px; */
             margin: auto;
             width: 96%;
             border: 1px solid black;
             /* box-shadow: 5px 5px 10px lightgray; */
             animation: shadowmove 5s infinite;
-            justify-content: center;
+            /* justify-content: center; */
         }
 
         table,
@@ -179,43 +180,65 @@
         }
 
         .loginform {
+            /* padding: 10px; */
             margin: 2%;
-            width: 96%;
+            /* width: 100%; */
             /* justify-content: center; */
-            border: 1px solid black;
+            /* border: 1px solid black; */
+        }
+
+        .login {
+            padding: 10px;
+            background-color: wheat;
+            /* animation: shadowmove 5s infinite;  */
+
         }
 
         label {
-            font-size: 12px;
+            font-size: 15px;
             font-family: Arial, Helvetica, sans-serif;
+            /* margin-top: 1px; */
         }
 
         input,
         textarea {
+            font-size: 17px;
+            border-radius: 8px;
             border: 1px solid lightgray;
-            width: 25%;
+            width: 100%;
             padding: 8px;
             margin-top: 5px;
         }
 
         .btnsubmit {
-            width: 27%;
+            width: 100%;
             background-color: rgb(96, 96, 255);
             border: none;
             color: white;
-            font-size: 10px;
-            padding: 9px;
+            font-size: 15px;
+            padding: 10px;
             border-radius: 5px;
         }
 
         .btnsubmit:hover {
+
+            /* width: 100%; */
             cursor: pointer;
             background-color: white;
             color: rgb(0, 0, 0);
         }
-        .log{
+
+        .log {
             /* padding: auto; */
             margin: auto;
+            width: 45%;
+            /* border: 1px solid black; */
+            /* box-shadow: 10px 10px 10px gray; */
+            /* animation: shadowmove 5s infinite; */
+        }
+
+        textarea {
+            height: 10rem;
         }
     </style>
 </head>
@@ -340,15 +363,15 @@
             <div class="loginform">
                 <div class="log">
                     <form class="login">
-                        <label for="name">Name:</label><br>
-                        <input type="text" placeholder="Jay"><br><br>
-                        <label for="gmain">Gmail:</label><br>
-                        <input type="email" placeholder="kananijay2525@gmail.com"><br><br>
-                        <label for="phone">Phone:</label><br>
-                        <input type="tel" placeholder="9876543210"><br><br>
-                        <label for="text">Message:</label><br>
+                        <label for="name">Name:</label>
+                        <input type="text" placeholder="Jay">
+                        <label for="gmain">Gmail:</label>
+                        <input type="email" placeholder="kananijay2525@gmail.com">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" placeholder="9876543210">
+                        <label for="text">Message:</label>
                         <textarea name="" id=""
-                            placeholder="please let us know how we can help you..."></textarea><br><br>
+                            placeholder="please let us know how we can help you..."></textarea>
                         <!-- <input type="text" placeholder="please let us know how we can help you..."><br><br> -->
                         <button class="btnsubmit" type="button">CONTACT US</button>
                     </form>
