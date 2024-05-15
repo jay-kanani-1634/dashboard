@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="fav.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h4 {
+            font-size: 15px;
+            color: #00000054;
+            padding-left: 5%;
+            margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding-top: 2%;
+        }
+
+        .logo {
+            display: flex;
+            /* border-bottom: 2px solid black; */
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .manu {
+            /* border: 1px solid black;     */
+            width: 15%;
+            background-color: #ffe454;
+            /* overflow: auto; */
+        }
+
+        .main {
+            /* border: 2px solid black; */
+            width: 85%;
+            overflow-y: auto;
+            flex-grow: 1;
+            /* overflow: hidden; */
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul>li {
+            /* padding-left: 15%;
+                padding-top: 2%;
+                padding-bottom: 2%; */
+            padding: 1%;
+            margin: 0;
+            list-style-type: none;
+            color: black;
+            /* display: flex; */
+            /* cursor: pointer; */
+        }
+
+        ul :hover {
+            background-color: rgb(255, 255, 255);
+            cursor: pointer;
+
+        }
+
+        a {
+            /* padding-right: ;               */
+            margin-left: 10%;
+            text-decoration: none;
+            color: black;
+            font-family: seriF;
+
+            font-size: 15px;
+            display: flex;
+            /* padding-left: 30px; */
+            /* width: 100%; */
+        }
+
+        img {
+            height: 50px;
+        }
+
+
+        .mainheader {
+            margin: 2%;
+            font-size: 45px;
+            text-align: center;
+            border: 1px solid black;
+            /* box-shadow: 5px 5px 10px lightgray; */
+            animation: shadowmove 5s infinite;
+        }
+
+        table {
+            /* width: 98%;
+                margin: 2%; */
+            margin: auto;
+            width: 96%;
+            border: 1px solid black;
+            /* box-shadow: 5px 5px 10px lightgray; */
+            animation: shadowmove 5s infinite;
+            justify-content: center;
+        }
+
+        table,
+        th,
+        td {
+
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th {
+            font-size: 20px;
+            font-style: bold;
+            padding: 0.3%;
+        }
+
+        td {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            /* padding-left: 1%; */
+            padding: 0.7%;
+        }
+
+        .btnupdate {
+            background-color: lightblue;
+        }
+
+        .btndelete {
+            background-color: tomato;
+        }
+
+        .btnview {
+            background-color: lightgreen;
+        }
+
+
+        .btndelete,
+        .btnupdate,
+        .btnview:hover {
+            cursor: pointer;
+
+        }
+
+        .btndelete,
+        .btnupdate,
+        .btnview {
+            box-sizing: content-box;
+            border: none;
+            /* width: 33%; */
+            border-radius: 4px;
+            padding: 4%;
+            /* margin: auto; */
+            font-size: 100%;
+        }
+
+        .tblid {
+            width: 3%;
+        }
+
+        .tbltitle {
+            width: 20%;
+        }
+
+        .tbldes {
+            width: 56%;
+        }
+
+        .tblaction {
+            width: 21%;
+        }
+
+
+
+
+        /* .mainul{
+                display: flex;
+            }
+            .mainul > ul > li{
+                text-decoration: none;
+                list-style-type: none;
+            } */
+
+
+        /* .i{
+                margin: auto;
+            } */
+
+
+        @keyframes shadowmove {
+            50% {
+                box-shadow: 5px 5px 10px lightgray, 5px 5px 10px black;
+            }
+        }
+
+        .loginform {
+            margin: 2%;
+            width: 96%;
+            /* justify-content: center; */
+            border: 1px solid black;
+        }
+
+        label {
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input,
+        textarea {
+            border: 1px solid lightgray;
+            width: 25%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        .btnsubmit {
+            width: 27%;
+            background-color: rgb(96, 96, 255);
+            border: none;
+            color: white;
+            font-size: 10px;
+            padding: 9px;
+            border-radius: 5px;
+        }
+
+        .btnsubmit:hover {
+            cursor: pointer;
+            background-color: white;
+            color: rgb(0, 0, 0);
+        }
+        .log{
+            /* padding: auto; */
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="manu">
+        <div class="logo">
+            <img src="fav.png" alt="star image">
+            <h2 style="font-family: monospace;">India</h2>
+        </div>
+        <h4>General</h4>
+        <ul>
+            <li><a href="#Home"><span>Home</span></a></li>
+            <li><a href="#Statistic"><span>Statistic</span></a></li>
+            <li><a href="#Members"><span>Members</span></a></li>
+            <li><a href="#Visit"><span>Visit</span></a></li>
+            <li><a href="#Card's Configrator"><span>Card's Configrator</span></a></li>
+            <li><a href="#Loyality Program"><span>Loyality Program</span></a></li>
+            <li><a href="#Rafferal System"><span>Rafferal System</span></a></li>
+        </ul>
+
+        <h4>Marketing</h4>
+        <ul>
+            <li><a href="#Promotions">Promotions</a></li>
+            <li><a href="#Coupons">Coupons</a></li>
+            <li><a href="#Retention">Retention</a></li>
+            <li><a href="#Annaouncements">Annaouncements</a></li>
+            <li><a href="#Templates">Templates</a></li>
+            <li><a href="#Alert">Alert</a></li>
+        </ul>
+
+        <h4>Feedback</h4>
+        <ul>
+            <li><a href="#Traffic source">Traffic source</a></li>
+            <li><a href="#Feedbacks">Feedbacks</a></li>
+        </ul>
+
+        <h4>Other</h4>
+        <ul>
+            <li><a href="#Staff">Staff</a></li>
+            <li><a href="#Biling">Biling</a></li>
+            <li><a href="#Location">Location</a></li>
+        </ul>
+    </div>
+
+
+
+
+
+
+    <div class="main">
+        <header class="mainheader">
+            Tasks
+        </header>
+
+        <section>
+            <div class="contents">
+                <table>
+                    <tr>
+                        <th class="tblid">Id</th>
+                        <th class="tbltitle">Title</h>
+                        <th class="tbldes">Description</th>
+                        <th class="tblact">Actions</h>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>Improve</td>
+                        <td>Improve the component!</td>
+                        <td>
+                            <!-- <input type="button" value="View"> -->
+                            <button type="button" class="btnview">View</button>
+                            <button type="button" class="btnupdate">Update</button>
+                            <button type="button" class="btndelete" onclick="alert('are you sure?')">Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Create an examole</td>
+                        <td>Create an example of to how to use the component</td>
+                        <td><button type="button" class="btnview">View</button>
+                            <button type="button" class="btnupdate">Update</button>
+                            <button type="button" class="btndelete" onclick="alert('are you sure?')">Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Improve</td>
+                        <td>Improve the component!</td>
+                        <td><button type="button" class="btnview">View</button>
+                            <button type="button" class="btnupdate">Update</button>
+                            <button type="button" class="btndelete" onclick="alert('are you sure?')">Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>Improve</td>
+                        <td>Improve the component!</td>
+                        <td><button type="button" class="btnview">View</button>
+                            <button type="button" class="btnupdate">Update</button>
+                            <button type="button" class="btndelete" onclick="alert('are you sure?')">Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>Improve</td>
+                        <td>Improve the component!</td>
+                        <td><button type="button" class="btnview" href="view">View</button>
+                            <button type="button" class="btnupdate">Update</button>
+                            <button type="button" class="btndelete" onclick="alert('are you sure?')">Delete</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+
+
+            <div class="loginform">
+                <div class="log">
+                    <form class="login">
+                        <label for="name">Name:</label><br>
+                        <input type="text" placeholder="Jay"><br><br>
+                        <label for="gmain">Gmail:</label><br>
+                        <input type="email" placeholder="kananijay2525@gmail.com"><br><br>
+                        <label for="phone">Phone:</label><br>
+                        <input type="tel" placeholder="9876543210"><br><br>
+                        <label for="text">Message:</label><br>
+                        <textarea name="" id=""
+                            placeholder="please let us know how we can help you..."></textarea><br><br>
+                        <!-- <input type="text" placeholder="please let us know how we can help you..."><br><br> -->
+                        <button class="btnsubmit" type="button">CONTACT US</button>
+                    </form>
+                </div>
+            </div>
+
+
+        </section>
+
+    </div>
+
+
+</body>
+
+</html>
